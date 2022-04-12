@@ -22,7 +22,7 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .col {
@@ -50,4 +50,44 @@ footer {
     text-align: center;
     border-top: 4px solid #7D93AA;
     font-weight: bold;
+}
+
+@media(min-width: 768px) {
+    #container {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .col {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .col img {
+        width: 30%;
+    }
+}
+
+@media(min-width: 1024px) {
+    #container {
+        width: 50%;
+        border-radius: 20px;
+    }
+
+    #flex {
+        display: flex;
+    }
+
+    .col {
+        margin: 20px;
+    }
+
+    .col img {
+        width: 40%;
+    }
+
+    .main_img {
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+    }
 }
